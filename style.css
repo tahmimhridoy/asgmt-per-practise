@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Lato:wght@300&family=Lobster&family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&family=Righteous&family=Source+Sans+Pro&family=Source+Serif+Pro:ital,wght@0,400;1,600&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #e5e5e5;;
+    margin: 0;
+}
+/****************** css code for navigation area ******************/
+nav{
+    background: #562EFF;
+}
+.nav-container{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo-area{
+    display: flex;
+    align-items: center;
+}
+.logo-area-text{
+    color: white;
+    margin-left: 16px;
+    font-weight: 500;
+}
+.logo-area img{
+    width: 41px;
+    height: 51px;
+}
+.menu-area ul{
+    display: flex;
+    align-items: center;
+}
+.menu-area ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+.menu-area ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-area ul li a img{
+    width: 51px;
+    height: 51px;
+    margin-top: 8px;
+}
+/*---------- The css code for top-player is start here ----------*/
+.container{
+    width: 870px;
+    background: white;
+    margin: 36px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+.section-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+.player{
+    display: flex;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.player:hover{
+    background: cyan;
+    transition: all .5s;
+    box-shadow: 0 0 20px gray;
+    
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*---------- The css code for top-blog is start here -------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 80px;
+}
+.blog{
+    display: flex;
+}
+.blog-img img{
+    width: 177px;
+}
+.blog-text{
+    margin-left: 16px;
+}
+.blog-text h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog-text p{
+    color: #9F9F9F;
+}
+.blog-text p a{
+    text-decoration: none;
+    color: #562EFF;
+}
+/*--------- The css code for latest course is start here ---------*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 35px;
+}
+.course{
+    padding: 12px;
+}
+.course-banner img{
+    width: 224px;
+}
+.course-detail h2{
+    font-size: 20px;
+    font-weight: 500;
+}.course-detail p{
+    font-size: 14.5px;
+    color: #ED6B4F;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating-point{
+    margin-left: 11px;
+}
+.fas{
+    font-size: 14px;
+}
+.filled{
+    color: yellow;
+}
+.empty{
+    color: gray;
+}
+.course-duration{
+    background: #FFE4E8;
+    color: #FF4A60;
+    padding: 5px;
+    border-radius: 14px;
+}
+@media only screen and (max-width: 688px) {
+    .nav-container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 7px;
+    }
+    .menu-area ul li{
+        margin-left: 10px;
+    }
+    .container{
+        width: 80%;
+    }
+    .top-blog{
+        width: 100%;
+        margin: auto;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .top-courses, .top-player{
+        width: 100%;
+        margin: auto;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        align-items: center;
+        flex-direction: column;
+    }
+    hr{
+        width: 400px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
